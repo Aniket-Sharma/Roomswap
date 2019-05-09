@@ -1,0 +1,54 @@
+{% load staticfiles %}
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% get_current_language as language_code %}
+
+<!DOCTYPE html>
+<html lang="{{ language_code }}">
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Room Swap">
+    <meta name="author" content="Aniket Sharma">
+
+</head>
+
+<body>
+
+  <div class="hidden">
+    <div id="logo-info" class="col-sm-10 text-left"><br>
+      <h3>Room Swap Portal<br>National Institie of Technology, Hamirpur</h3>
+      </div>
+  </div>
+  <script>
+  </script>
+  <br>
+  <br>
+
+<div class="container-fluid">
+
+    {% bootstrap_messages %}
+
+    {% block content %}
+
+    {% endblock %}
+
+</div>
+
+
+  <br><br>
+<!-- footer -->
+          <footer>
+
+
+    <div class="footer-copyright text-center py-3">© made by:
+      <a href="https://www.hackerearth.com/@aniket147">Aniket Sharma</a>
+    </div>
+
+          </footer>
+
+</body>
+</html>

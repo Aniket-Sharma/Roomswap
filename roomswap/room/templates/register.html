@@ -1,0 +1,19 @@
+{% extends 'page.html' %}
+{% load bootstrap4 %}
+{% load i18n %}
+
+{% block content %}
+    <div style="display:flex;justify-content:center;align-items:center;">
+    <div class="card card-container">
+    <div class = "card-title card-header">
+        <h4>{% trans 'Registeration' %}</h4>
+    </div>
+        <hr>
+    <form method="post" id="sign-in">
+        {% csrf_token %}
+        {{ form }}
+        <button class="btn btn-success">{% trans 'Register' %}</button> &emsp;
+    </form>
+    </div>
+    </div>
+{% endblock %}
